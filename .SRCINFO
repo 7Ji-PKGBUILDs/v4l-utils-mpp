@@ -20,6 +20,7 @@ pkgbase = v4l-utils-mpp
 	depends = json-c
 	optdepends = qt5-base: for qv4l2 and qvidcap
 	optdepends = alsa-lib: for qv4l2
+	optdepends = libbpf: for ir-keytable
 	provides = libv4l=1.26.1
 	provides = v4l-utils=1.26.1
 	conflicts = libv4l

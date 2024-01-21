@@ -19,7 +19,7 @@ license=('LGPL')
 options=('!distcc')
 depends=('hicolor-icon-theme' 'gcc-libs' 'libjpeg-turbo'  'systemd-libs' 'json-c')
 makedepends=('qt5-base' 'alsa-lib' 'meson' 'clang' 'doxygen' 'libbpf')
-optdepends=('qt5-base: for qv4l2 and qvidcap' 'alsa-lib: for qv4l2')
+optdepends=('qt5-base: for qv4l2 and qvidcap' 'alsa-lib: for qv4l2' 'libbpf: for ir-keytable')
 source=(https://linuxtv.org/downloads/v4l-utils/${_pkgname}-${pkgver}.tar.xz)
 _patches=(
   '0001-libv4l2-Support-mmap-to-libv4l-plugin.patch'
