@@ -20,7 +20,7 @@ options=('!distcc')
 depends=('hicolor-icon-theme' 'gcc-libs' 'libjpeg-turbo'  'systemd-libs' 'json-c' 'mpp')
 makedepends=('qt5-base' 'alsa-lib')
 optdepends=('qt5-base: for qv4l2 and qvidcap' 'alsa-lib: for qv4l2')
-source=(https://linuxtv.org/downloads/v4l-utils/${_pkgname}-${pkgver}.tar.bz2{,.asc})
+source=(https://linuxtv.org/downloads/v4l-utils/${_pkgname}-${pkgver}.tar.bz2)
 _patches=(
   '0001-libv4l2-Support-mmap-to-libv4l-plugin.patch'
   '0002-libv4l-mplane-Filter-out-multiplane-formats.patch'
@@ -36,7 +36,6 @@ for _patch in ${_patches[@]}; do
 done
 sha256sums=(
   'cbb7fe8a6307f5ce533a05cded70bb93c3ba06395ab9b6d007eb53b75d805f5b'
-  'SKIP'
   '2b6b3e39a0bc46518bb1c77b165412818c8d3be2f0d1ba63aff762243e7860e3'
   '06f4516e03e4f387732e6b357e1d44a3546ed56b82f5d93fb090f30fcccc599b'
   'e59e60cea2158eb4ed5901ef1c623ac9e5e829ae503b3dbb6e901fe0515b6b2f'
@@ -44,7 +43,6 @@ sha256sums=(
   'd176613ae41b124600a290c2e004651c5aee9bfb7acb3f2bebc1e47d39c2b501'
   'e594ff7c90ad7a1ac9295178349ccf6b51050696d1e79f8ea632e2a73360eb61'
 )
-validpgpkeys=('05D0169C26E41593418129DF199A64FADFB500FF') # Gregor Jasny <gjasny@googlemail.com>
 
 _srcname="${_pkgname}-${pkgver}"
 
