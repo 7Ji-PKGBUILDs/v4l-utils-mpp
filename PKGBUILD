@@ -9,7 +9,7 @@ pkgname=${_pkgname}-mpp
 pkgver=1.24.1
 pkgrel=2
 pkgdesc="Userspace tools and conversion library for Video 4 Linux, with Rockchip MPP support"
-arch=('x86_64' 'aarch64')
+arch=('x86_64' 'aarch64' 'armv7h')
 url="https://linuxtv.org/"
 provides=("libv4l=${pkgver}" "${_pkgname}=${pkgver}")
 replaces=('libv4l')

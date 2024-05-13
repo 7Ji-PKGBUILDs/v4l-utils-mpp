@@ -5,6 +5,7 @@ pkgbase = v4l-utils-mpp
 	url = https://linuxtv.org/
 	arch = x86_64
 	arch = aarch64
+	arch = armv7h
 	license = LGPL
 	makedepends = qt5-base
 	makedepends = alsa-lib
