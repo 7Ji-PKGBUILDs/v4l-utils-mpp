@@ -14,7 +14,6 @@ pkgbase = v4l-utils-mpp
 	depends = libjpeg-turbo
 	depends = systemd-libs
 	depends = json-c
-	depends = mpp
 	optdepends = qt5-base: for qv4l2 and qvidcap
 	optdepends = alsa-lib: for qv4l2
 	provides = libv4l=1.24.1
